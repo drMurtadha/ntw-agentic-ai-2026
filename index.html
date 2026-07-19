@@ -113,13 +113,96 @@
 
     <section class="demo-section" id="demo">
       <div class="section-heading light">
-        <p class="eyebrow">LAUNCHPAD DEMONSTRASI</p>
-        <h2>Buka platform, salin arahan, terus demonstrasi.</h2>
-        <p>Setiap pautan dibuka dalam tab baharu. Log masuk lebih awal supaya pertukaran platform semasa Google Meet berjalan lancar.</p>
+        <p class="eyebrow">DEMO ASAS · 30 MINIT</p>
+        <h2>Mulakan dengan AI yang peserta sudah kenal.</h2>
+        <p>Gunakan satu senario yang sama pada Gemini, ChatGPT dan Claude biasa. Setiap pautan dibuka dalam tab baharu; log masuk lebih awal supaya pertukaran platform semasa Google Meet berjalan lancar.</p>
+      </div>
+
+      <div class="basic-demo-note">
+        <strong>Senario bersama</strong>
+        <span>AI membantu urus setia menukar nota mesyuarat, rekod kehadiran dan maklum balas kepada pakej susulan pascaprogram. Gunakan fail rekaan yang disediakan—jangan muat naik data sebenar atau sulit.</span>
+        <div class="basic-demo-files">
+          <a href="demo-files/nota-mesyuarat-program.md" download>Nota mesyuarat ↧</a>
+          <a href="demo-files/kehadiran.csv" download>Kehadiran ↧</a>
+          <a href="demo-files/maklum-balas.csv" download>Maklum balas ↧</a>
+        </div>
+      </div>
+
+      <div class="basic-demo-grid">
+        <article class="basic-demo-card">
+          <div class="basic-demo-head"><span>01</span><div><p>GOOGLE · 10 MINIT</p><h3>Gemini biasa</h3></div></div>
+          <ol class="minute-plan">
+            <li><strong>2 min</strong><span>Buka Gemini dan muat naik tiga fail contoh.</span></li>
+            <li><strong>1 min</strong><span>Salin arahan di bawah.</span></li>
+            <li><strong>5 min</strong><span>Perhatikan AI merancang, menganalisis dan menghasilkan tiga hasil.</span></li>
+            <li><strong>2 min</strong><span>Semak angka dan perkara bertanda “Perlu disahkan”.</span></li>
+          </ol>
+          <pre id="gemini-basic-prompt">Baca ketiga-tiga fail yang saya lampirkan. Matlamat anda ialah menyediakan pakej susulan pascaprogram untuk urus setia UTM.
+
+Rancang langkah kerja dahulu, kemudian:
+1. Kira kadar kehadiran dan purata skor maklum balas.
+2. Sediakan ringkasan pengurusan.
+3. Sediakan jadual tindakan dengan pemilik dan tarikh.
+4. Sediakan draf e-mel susulan.
+
+Gunakan Bahasa Melayu rasmi dan hanya fakta daripada fail. Jangan mereka-reka maklumat. Tulis “Perlu disahkan” jika maklumat tiada. Akhiri dengan senarai semakan manusia.</pre>
+          <div class="basic-demo-actions"><a href="https://gemini.google.com/app" target="_blank" rel="noreferrer">Buka Gemini ↗</a><button type="button" class="copy-button" data-copy-target="gemini-basic-prompt">Salin arahan</button></div>
+          <p class="teaching-point"><strong>Mesej utama:</strong> Satu arahan boleh memberi matlamat, proses, batasan dan semakan.</p>
+        </article>
+
+        <article class="basic-demo-card featured">
+          <div class="basic-demo-head"><span>02</span><div><p>OPENAI · 10 MINIT</p><h3>ChatGPT biasa</h3></div></div>
+          <ol class="minute-plan">
+            <li><strong>2 min</strong><span>Buka ChatGPT dan lampirkan tiga fail contoh.</span></li>
+            <li><strong>1 min</strong><span>Salin tugasan berperingkat.</span></li>
+            <li><strong>5 min</strong><span>Biarkan AI melaksanakan analisis dan menyediakan hasil.</span></li>
+            <li><strong>2 min</strong><span>Gunakan arahan susulan untuk mengaudit jawapan.</span></li>
+          </ol>
+          <pre id="chatgpt-basic-prompt">Saya melampirkan nota mesyuarat, rekod kehadiran dan maklum balas program. Bertindak sebagai pembantu urus setia UTM.
+
+Laksanakan tugasan ini secara berperingkat:
+1. Nyatakan rancangan ringkas.
+2. Analisis semua fail dan semak silang fakta.
+3. Kira kadar kehadiran dan purata skor.
+4. Hasilkan ringkasan pengurusan, jadual tindakan dan draf e-mel susulan.
+5. Audit hasil anda sendiri sebelum memberikan jawapan akhir.
+
+Gunakan Bahasa Melayu rasmi. Jangan tambah nama, tarikh, angka atau keputusan yang tiada dalam sumber. Tandakan “Perlu disahkan” apabila perlu.</pre>
+          <div class="basic-demo-actions"><a href="https://chatgpt.com/" target="_blank" rel="noreferrer">Buka ChatGPT ↗</a><button type="button" class="copy-button" data-copy-target="chatgpt-basic-prompt">Salin arahan</button></div>
+          <p class="teaching-point"><strong>Mesej utama:</strong> Minta AI merancang, melaksanakan dan mengaudit—manusia tetap meluluskan.</p>
+        </article>
+
+        <article class="basic-demo-card">
+          <div class="basic-demo-head"><span>03</span><div><p>ANTHROPIC · 10 MINIT</p><h3>Claude biasa</h3></div></div>
+          <ol class="minute-plan">
+            <li><strong>2 min</strong><span>Buka Claude dan tambah tiga fail contoh.</span></li>
+            <li><strong>1 min</strong><span>Salin arahan berasaskan hasil.</span></li>
+            <li><strong>5 min</strong><span>Semak bagaimana beberapa sumber digabungkan.</span></li>
+            <li><strong>2 min</strong><span>Periksa kebolehkesanan fakta dan batasan jawapan.</span></li>
+          </ol>
+          <pre id="claude-basic-prompt">Teliti semua fail yang dilampirkan dan sediakan pakej susulan pascaprogram yang sedia disemak oleh urus setia UTM.
+
+Sebelum menulis, terangkan rancangan kerja ringkas anda. Kemudian hasilkan:
+- ringkasan pengurusan;
+- pengiraan kadar kehadiran dan purata skor;
+- jadual tindakan;
+- draf e-mel susulan; dan
+- senarai perkara yang memerlukan pengesahan manusia.
+
+Gunakan Bahasa Melayu rasmi. Setiap fakta dan angka mesti datang daripada fail. Jangan membuat andaian bagi nama, tarikh, pemilik atau keputusan yang tidak dinyatakan.</pre>
+          <div class="basic-demo-actions"><a href="https://claude.ai/new" target="_blank" rel="noreferrer">Buka Claude ↗</a><button type="button" class="copy-button" data-copy-target="claude-basic-prompt">Salin arahan</button></div>
+          <p class="teaching-point"><strong>Mesej utama:</strong> Berikan konteks, bentuk hasil dan sempadan yang jelas.</p>
+        </article>
+      </div>
+
+      <div class="advanced-heading">
+        <p class="eyebrow">LANGKAH SETERUSNYA · LATIHAN KENDIRI</p>
+        <h3>Daripada perbualan kepada ruang kerja agentik.</h3>
+        <p>Bahagian lanjutan ini tidak wajib diikuti semasa demo asas. Peserta boleh mencuba Gems, Codex dan Cowork kemudian menggunakan panduan lengkap di bawah.</p>
       </div>
       <div class="platform-grid">
         <article class="platform-card gemini-card">
-          <span class="demo-number">01</span>
+          <span class="demo-number">04</span>
           <p class="platform-kicker">GOOGLE</p>
           <h3>Gemini + Gems</h3>
           <p>Buka pengurus Gems untuk menunjukkan pembantu khusus bagi arahan yang berulang.</p>
@@ -128,7 +211,7 @@
           <small>Gunakan akaun yang mempunyai akses Gemini.</small>
         </article>
         <article class="platform-card codex-card">
-          <span class="demo-number">02</span>
+          <span class="demo-number">05</span>
           <p class="platform-kicker">OPENAI</p>
           <h3>ChatGPT Codex</h3>
           <p>Buka Codex untuk menunjukkan agent bekerja dengan repositori dan fail projek.</p>
@@ -137,7 +220,7 @@
           <small>Untuk fail tempatan, gunakan mod Codex dalam aplikasi desktop.</small>
         </article>
         <article class="platform-card claude-card">
-          <span class="demo-number">03</span>
+          <span class="demo-number">06</span>
           <p class="platform-kicker">ANTHROPIC</p>
           <h3>Claude Cowork</h3>
           <p>Buka Claude, kemudian pilih <strong>Cowork</strong> pada kotak mesej sebelum memberi tugasan.</p>
