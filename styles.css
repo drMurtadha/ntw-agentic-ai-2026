@@ -155,3 +155,27 @@ h1,h2,h3,.brand,.eyebrow,.label,.mini-flow,.scenario-goal strong,.formula-list s
 .copy-toast.show{opacity:1;transform:translateY(0)}
 @media(max-width:900px){.platform-grid,.prompt-grid{grid-template-columns:1fr}.platform-card{min-height:340px}.prompt-heading{margin-top:70px}}
 @media(max-width:560px){.prompt-card{padding:18px}.prompt-card-head{display:block}.copy-button{width:100%;margin-top:16px}.prompt-card pre{min-height:auto;max-height:430px}.copy-toast{left:18px;right:18px;bottom:18px}}
+.gem-setup{margin-top:100px;padding:44px;background:#f4f7f9;color:var(--ink)}
+.gem-setup-intro{max-width:860px;margin-bottom:38px}
+.gem-setup-intro h3{margin:0;font-size:38px;line-height:1.12}
+.gem-setup-intro>p:last-child{color:var(--muted);font-size:18px}
+.gem-field-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.gem-field{display:grid;grid-template-columns:300px 1fr;gap:34px;padding:24px 0;border-bottom:1px solid var(--line)}
+.gem-field-label{display:flex;gap:18px;align-items:flex-start}
+.gem-field-label>span{color:var(--teal);font-weight:800}
+.gem-field-label strong{display:block;font:700 20px "Space Grotesk","DM Sans",Arial,sans-serif}
+.gem-field-label small{display:block;margin-top:4px;color:var(--muted);line-height:1.4}
+.gem-field-value{display:flex;align-items:flex-start;gap:16px}
+.gem-field-value code,.gem-field-value pre{flex:1;margin:0;padding:15px 17px;background:white;border-left:3px solid var(--teal);color:var(--ink);white-space:pre-wrap;font:15px/1.55 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+.gem-field-value .copy-button{color:var(--ink);border-color:var(--teal)}
+.gem-instructions-field .gem-field-value{align-items:flex-start}
+.gem-instructions-field pre{max-height:410px;overflow:auto}
+.gem-choice{display:block}
+.gem-choice code{display:inline-block}
+.gem-choice span{display:block;margin-top:10px;color:var(--muted)}
+.knowledge-files{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.knowledge-files a{padding:14px;background:white;border:1px solid var(--line);font-weight:700}
+.knowledge-files a:hover{border-color:var(--teal);color:var(--teal)}
+.preview-field{background:#e3faf7;padding-left:16px;padding-right:16px}
+@media(max-width:900px){.gem-setup{margin-top:70px;padding:30px}.gem-field{grid-template-columns:1fr}.knowledge-files{grid-template-columns:1fr}}
+@media(max-width:560px){.gem-setup{padding:22px 18px}.gem-setup-intro h3{font-size:30px}.gem-field-value{display:block}.gem-field-value .copy-button{margin-top:12px}.gem-instructions-field pre{max-height:360px}.preview-field{padding-left:12px;padding-right:12px}}

@@ -144,6 +144,66 @@
         </article>
       </div>
 
+      <section class="gem-setup" id="gem-setup" aria-labelledby="gem-setup-title">
+        <div class="gem-setup-intro">
+          <p class="eyebrow">SETUP GEM LANGKAH DEMI LANGKAH</p>
+          <h3 id="gem-setup-title">Isi setiap ruang New Gem dengan kandungan siap salin.</h3>
+          <p>Buka Gemini Gems, pilih <strong>New Gem</strong>, kemudian gunakan butang salin mengikut urutan di bawah.</p>
+        </div>
+
+        <ol class="gem-field-list">
+          <li class="gem-field">
+            <div class="gem-field-label"><span>01</span><div><strong>Name</strong><small>Nama yang akan muncul dalam senarai Gems</small></div></div>
+            <div class="gem-field-value"><code id="gem-name">Pembantu Pascaprogram UTM</code><button type="button" class="copy-button" data-copy-target="gem-name">Salin</button></div>
+          </li>
+
+          <li class="gem-field">
+            <div class="gem-field-label"><span>02</span><div><strong>Description</strong><small>Terangkan fungsi Gem secara ringkas</small></div></div>
+            <div class="gem-field-value"><code id="gem-description">Menukar nota mesyuarat, rekod kehadiran dan maklum balas program kepada ringkasan pengurusan, jadual tindakan dan draf e-mel susulan yang mudah disemak.</code><button type="button" class="copy-button" data-copy-target="gem-description">Salin</button></div>
+          </li>
+
+          <li class="gem-field gem-instructions-field">
+            <div class="gem-field-label"><span>03</span><div><strong>Instructions</strong><small>Peranan, proses, batasan dan format hasil</small></div></div>
+            <div class="gem-field-value"><pre id="gem-instructions">Anda ialah Pembantu Pascaprogram UTM. Tugas anda ialah menukar bahan pascaprogram kepada hasil kerja yang tepat, ringkas dan sesuai untuk urusan rasmi.
+
+Apabila pengguna memberikan nota, rekod kehadiran atau maklum balas:
+
+1. Kenal pasti fakta, keputusan, isu dan perkara yang belum diputuskan.
+2. Kira kadar kehadiran dan purata skor hanya jika data mencukupi.
+3. Jangan mereka-reka nama, tarikh, angka, pemilik tindakan atau keputusan.
+4. Gunakan Bahasa Melayu rasmi, jelas dan tidak berbunga-bunga.
+5. Hasilkan:
+   a. Ringkasan pengurusan;
+   b. Jadual tindakan dengan lajur Tindakan, Pemilik dan Tarikh;
+   c. Draf e-mel susulan kepada urus setia.
+6. Tulis “Perlu disahkan” apabila pemilik, tarikh atau maklumat lain tiada dalam sumber.
+7. Akhiri setiap jawapan dengan bahagian “Semakan manusia diperlukan”.
+8. Jangan menghantar e-mel, mengubah fail sumber atau membuat tindakan luaran.
+
+Sebelum memberikan jawapan akhir, semak semula semua angka dan pastikan setiap kenyataan boleh dikesan kepada bahan yang diberikan.</pre><button type="button" class="copy-button" data-copy-target="gem-instructions">Salin Instructions</button></div>
+          </li>
+
+          <li class="gem-field">
+            <div class="gem-field-label"><span>04</span><div><strong>Default tool</strong><small>Pilihan paling stabil untuk demo</small></div></div>
+            <div class="gem-field-value gem-choice"><code>No default tool</code><span>Tidak perlu alat tambahan untuk demo berasaskan fail Knowledge.</span></div>
+          </li>
+
+          <li class="gem-field">
+            <div class="gem-field-label"><span>05</span><div><strong>Knowledge</strong><small>Muat naik tiga fail contoh rekaan</small></div></div>
+            <div class="gem-field-value knowledge-files">
+              <a href="demo-files/nota-mesyuarat-program.md" download>Nota mesyuarat ↧</a>
+              <a href="demo-files/kehadiran.csv" download>Data kehadiran ↧</a>
+              <a href="demo-files/maklum-balas.csv" download>Maklum balas ↧</a>
+            </div>
+          </li>
+
+          <li class="gem-field preview-field">
+            <div class="gem-field-label"><span>06</span><div><strong>Preview</strong><small>Uji Gem sebelum menekan Save</small></div></div>
+            <div class="gem-field-value"><code id="gem-preview">Berdasarkan semua fail Knowledge, sediakan pakej susulan pascaprogram. Tunjukkan pengiraan kehadiran dan purata skor, kemudian hasilkan ringkasan pengurusan, jadual tindakan dan draf e-mel.</code><button type="button" class="copy-button" data-copy-target="gem-preview">Salin prompt ujian</button></div>
+          </li>
+        </ol>
+      </section>
+
       <div class="prompt-heading">
         <p class="eyebrow">CORAK ARAHAN</p>
         <h3>Pilih arahan mengikut masa dan tahap demonstrasi.</h3>
