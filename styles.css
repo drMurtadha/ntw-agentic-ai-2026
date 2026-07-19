@@ -203,3 +203,9 @@ h1,h2,h3,.brand,.eyebrow,.label,.mini-flow,.scenario-goal strong,.formula-list s
 .prompt-library .prompt-heading{margin:0;padding:44px 28px 28px;border-top:1px solid #314054}
 .prompt-library .prompt-grid{padding:0 28px 28px}
 @media(max-width:560px){.prompt-library>summary{padding:22px 58px 22px 20px}.prompt-library>summary::after{right:20px}.prompt-library .prompt-heading{padding:32px 18px 22px}.prompt-library .prompt-grid{padding:0 18px 18px}}
+.demo-prerequisite{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:26px;padding:18px 20px;background:#fff4ec;border-left:5px solid #d97757}
+.demo-prerequisite strong,.demo-prerequisite span{display:block}
+.demo-prerequisite span{margin-top:4px;color:var(--muted)}
+.demo-prerequisite a{flex:none;padding:12px 15px;background:var(--ink);color:white;font-weight:800}
+.demo-prerequisite a:hover{background:#d97757}
+@media(max-width:700px){.demo-prerequisite{display:block}.demo-prerequisite a{display:inline-block;margin-top:16px}}
