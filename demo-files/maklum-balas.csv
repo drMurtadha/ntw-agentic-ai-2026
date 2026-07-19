@@ -1,8 +1,13 @@
-id_responden,skor_1_hingga_5,komen
-R001,5,Demonstrasi sangat jelas dan praktikal.
-R002,4,Mohon tambah masa soal jawab.
-R003,4,Bahan patut diterima lebih awal.
-R004,5,Contoh dekat dengan tugas harian.
-R005,3,Penerangan awal agak cepat.
-R006,5,Mahu sesi lanjutan berbentuk hands-on.
-R007,4,Perlu nota ringkas selepas program.
+zon,tarikh_cadangan,kolej_terlibat,unit_petugas,bilangan_petugas,catatan_maklum_balas
+Zon A,2026-07-27,Kolej Tun Fatimah; Kolej Rahman Putra,Pusat Kesihatan Universiti,4,Pasukan pemeriksaan dan nasihat kesihatan
+Zon A,2026-07-27,Kolej Tun Fatimah; Kolej Rahman Putra,Jabatan Harta Bina,8,Pembersihan longkang dan pelupusan bahan takungan
+Zon A,2026-07-27,Kolej Tun Fatimah; Kolej Rahman Putra,Unit Keselamatan,3,Kawalan laluan dan akses kawasan
+Zon A,2026-07-27,Kolej Tun Fatimah; Kolej Rahman Putra,Pejabat Hal Ehwal Pelajar,4,Penyelarasan sukarelawan dan penghuni
+Zon B,2026-07-28,Kolej Tun Dr Ismail; Kolej Datin Seri Endon,Pusat Kesihatan Universiti,4,Pasukan pemeriksaan dan nasihat kesihatan
+Zon B,2026-07-28,Kolej Tun Dr Ismail; Kolej Datin Seri Endon,Jabatan Harta Bina,8,Pembersihan longkang dan pelupusan bahan takungan
+Zon B,2026-07-28,Kolej Tun Dr Ismail; Kolej Datin Seri Endon,Unit Keselamatan,3,Kawalan laluan dan akses kawasan
+Zon B,2026-07-28,Kolej Tun Dr Ismail; Kolej Datin Seri Endon,Pejabat Hal Ehwal Pelajar,4,Penyelarasan sukarelawan dan penghuni
+Zon C,2026-07-29,Kolej Perdana; Kolej 9 & 10,Pusat Kesihatan Universiti,4,Pasukan pemeriksaan dan nasihat kesihatan
+Zon C,2026-07-29,Kolej Perdana; Kolej 9 & 10,Jabatan Harta Bina,8,Pembersihan longkang dan pelupusan bahan takungan
+Zon C,2026-07-29,Kolej Perdana; Kolej 9 & 10,Unit Keselamatan,3,Kawalan laluan dan akses kawasan
+Zon C,2026-07-29,Kolej Perdana; Kolej 9 & 10,Pejabat Hal Ehwal Pelajar,4,Penyelarasan sukarelawan dan penghuni

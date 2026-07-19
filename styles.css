@@ -83,6 +83,9 @@ nav a:hover{color:var(--teal)}
 .basic-demo-note>span{color:var(--muted)}
 .basic-demo-files{display:flex;flex-wrap:wrap;gap:7px}
 .basic-demo-files a{padding:9px 11px;background:white;border:1px solid var(--line);font-size:12px;font-weight:800}
+.facilitator-check{margin:-12px 0 28px;border:1px solid #314054;background:#101f35}
+.facilitator-check summary{padding:14px 18px;color:var(--lime);font-size:13px;font-weight:800;cursor:pointer}
+.facilitator-check p{margin:0;padding:0 18px 18px;color:#bac6d4;font-size:14px}
 .basic-demo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .basic-demo-card{display:flex;flex-direction:column;min-width:0;padding:26px;background:#101f35;border:1px solid #314054}
 .basic-demo-card.featured{border-color:var(--teal)}
@@ -91,12 +94,14 @@ nav a:hover{color:var(--teal)}
 .basic-demo-head p{margin:0;color:#93a1b2;font-size:11px;font-weight:800;letter-spacing:.1em}
 .basic-demo-head h3{margin:3px 0 0;font:700 25px "Space Grotesk"}
 .minute-plan{margin:24px 0;padding:0;list-style:none;border-top:1px solid #314054}
-.minute-plan li{display:grid;grid-template-columns:48px 1fr;gap:10px;padding:11px 0;border-bottom:1px solid #314054;color:#bac6d4;font-size:13px}
-.minute-plan strong{color:var(--lime)}
+.minute-plan li{display:grid;grid-template-columns:58px minmax(0,1fr);align-items:start;gap:16px;padding:12px 0;border-bottom:1px solid #314054;color:#bac6d4;font-size:13px;line-height:1.5}
+.minute-plan strong{display:inline-flex;align-items:center;justify-content:center;min-height:28px;padding:4px 8px;background:rgba(200,241,53,.12);border:1px solid rgba(200,241,53,.38);border-radius:4px;color:var(--lime);font-size:12px;white-space:nowrap}
+.minute-plan span{display:block;padding-top:4px}
 .basic-demo-card pre{flex:1;min-height:410px;margin:0;padding:17px;overflow:auto;white-space:pre-wrap;background:#07101f;border-left:3px solid var(--teal);color:#dce4ee;font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
 .basic-demo-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
 .basic-demo-actions a,.basic-demo-actions button{display:flex;align-items:center;justify-content:center;min-height:44px;margin:0;padding:10px 12px;font-weight:800}
-.basic-demo-actions a{background:var(--lime);color:var(--ink)}
+.basic-demo-actions a{background:var(--lime);border:2px solid var(--lime);color:var(--ink);box-shadow:0 0 0 1px rgba(255,255,255,.18);font-size:14px}
+.basic-demo-actions a:hover{background:white;border-color:white}
 .teaching-point{margin:18px 0 0;color:#bac6d4;font-size:13px}
 .teaching-point strong{color:white}
 .advanced-heading{margin:100px 0 34px;padding-top:44px;border-top:1px solid #314054}

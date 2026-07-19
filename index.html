@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260720-2">
 </head>
 <body>
   <header class="site-header">
@@ -120,13 +120,17 @@
 
       <div class="basic-demo-note">
         <strong>Senario bersama</strong>
-        <span>AI membantu urus setia menukar nota mesyuarat, rekod kehadiran dan maklum balas kepada pakej susulan pascaprogram. Gunakan fail rekaan yang disediakan—jangan muat naik data sebenar atau sulit.</span>
+        <span>AI membantu urus setia menyusun rancangan operasi pembasmian tempat pembiakan Aedes daripada nota mesyuarat, rekod kehadiran wakil dan maklum balas penugasan. Semua nama dan maklumat ialah rekaan—jangan muat naik data sebenar atau sulit.</span>
         <div class="basic-demo-files">
           <a href="demo-files/nota-mesyuarat-program.md" download>Nota mesyuarat ↧</a>
           <a href="demo-files/kehadiran.csv" download>Kehadiran ↧</a>
           <a href="demo-files/maklum-balas.csv" download>Maklum balas ↧</a>
         </div>
       </div>
+      <details class="facilitator-check">
+        <summary>Semakan pantas penceramah: angka yang sepatutnya diperoleh</summary>
+        <p><strong>Kehadiran mesyuarat:</strong> 11 daripada 12 wakil (91.7%). <strong>Petugas:</strong> 19 orang bagi setiap zon; 57 penugasan keseluruhan untuk tiga hari. Mengikut unit: Pusat Kesihatan Universiti 12, Jabatan Harta Bina 24, Unit Keselamatan 9 dan Pejabat Hal Ehwal Pelajar 12.</p>
+      </details>
 
       <div class="basic-demo-grid">
         <article class="basic-demo-card">
@@ -134,18 +138,19 @@
           <ol class="minute-plan">
             <li><strong>2 min</strong><span>Buka Gemini dan muat naik tiga fail contoh.</span></li>
             <li><strong>1 min</strong><span>Salin arahan di bawah.</span></li>
-            <li><strong>5 min</strong><span>Perhatikan AI merancang, menganalisis dan menghasilkan tiga hasil.</span></li>
+            <li><strong>5 min</strong><span>Perhatikan AI merancang, menganalisis dan menghasilkan beberapa hasil.</span></li>
             <li><strong>2 min</strong><span>Semak angka dan perkara bertanda “Perlu disahkan”.</span></li>
           </ol>
-          <pre id="gemini-basic-prompt">Baca ketiga-tiga fail yang saya lampirkan. Matlamat anda ialah menyediakan pakej susulan pascaprogram untuk urus setia UTM.
+          <pre id="gemini-basic-prompt">Baca ketiga-tiga fail rekaan yang saya lampirkan. Matlamat anda ialah menyediakan draf pelan operasi pembasmian tempat pembiakan Aedes di kampus untuk semakan urus setia UTM.
 
 Rancang langkah kerja dahulu, kemudian:
-1. Kira kadar kehadiran dan purata skor maklum balas.
-2. Sediakan ringkasan pengurusan.
-3. Sediakan jadual tindakan dengan pemilik dan tarikh.
-4. Sediakan draf e-mel susulan.
+1. Ringkaskan tujuan, keputusan dan perkara yang belum diputuskan.
+2. Kira jumlah wakil yang hadir dan jumlah petugas bagi setiap zon, tarikh dan unit.
+3. Sediakan jadual operasi mengikut zon, kolej, tarikh, unit dan bilangan petugas.
+4. Sediakan senarai tindakan sebelum operasi dengan pemilik dan tarikh.
+5. Sediakan draf hebahan kepada warga kolej.
 
-Gunakan Bahasa Melayu rasmi dan hanya fakta daripada fail. Jangan mereka-reka maklumat. Tulis “Perlu disahkan” jika maklumat tiada. Akhiri dengan senarai semakan manusia.</pre>
+Gunakan Bahasa Melayu rasmi dan hanya fakta daripada fail. Jangan memberi arahan teknikal kesihatan atau penggunaan bahan kimia. Tulis “Perlu disahkan” jika maklumat tiada. Akhiri dengan senarai semakan manusia dan nyatakan bahawa pelan memerlukan kelulusan pihak berkuasa UTM.</pre>
           <div class="basic-demo-actions"><a href="https://gemini.google.com/app" target="_blank" rel="noreferrer">Buka Gemini ↗</a><button type="button" class="copy-button" data-copy-target="gemini-basic-prompt">Salin arahan</button></div>
           <p class="teaching-point"><strong>Mesej utama:</strong> Satu arahan boleh memberi matlamat, proses, batasan dan semakan.</p>
         </article>
@@ -158,16 +163,16 @@ Gunakan Bahasa Melayu rasmi dan hanya fakta daripada fail. Jangan mereka-reka ma
             <li><strong>5 min</strong><span>Biarkan AI melaksanakan analisis dan menyediakan hasil.</span></li>
             <li><strong>2 min</strong><span>Gunakan arahan susulan untuk mengaudit jawapan.</span></li>
           </ol>
-          <pre id="chatgpt-basic-prompt">Saya melampirkan nota mesyuarat, rekod kehadiran dan maklum balas program. Bertindak sebagai pembantu urus setia UTM.
+          <pre id="chatgpt-basic-prompt">Saya melampirkan nota mesyuarat, rekod kehadiran wakil dan cadangan penugasan bagi operasi pembasmian tempat pembiakan Aedes. Bertindak sebagai pembantu urus setia UTM.
 
 Laksanakan tugasan ini secara berperingkat:
 1. Nyatakan rancangan ringkas.
 2. Analisis semua fail dan semak silang fakta.
-3. Kira kadar kehadiran dan purata skor.
-4. Hasilkan ringkasan pengurusan, jadual tindakan dan draf e-mel susulan.
+3. Kira jumlah kehadiran mesyuarat serta jumlah petugas mengikut zon dan unit.
+4. Hasilkan ringkasan pengurusan, jadual operasi, senarai tindakan dan draf hebahan kepada warga kolej.
 5. Audit hasil anda sendiri sebelum memberikan jawapan akhir.
 
-Gunakan Bahasa Melayu rasmi. Jangan tambah nama, tarikh, angka atau keputusan yang tiada dalam sumber. Tandakan “Perlu disahkan” apabila perlu.</pre>
+Gunakan Bahasa Melayu rasmi. Jangan tambah nama, tarikh, angka atau keputusan yang tiada dalam sumber. Jangan cipta arahan teknikal kesihatan atau penggunaan bahan kimia. Tandakan “Perlu disahkan” apabila perlu dan nyatakan kelulusan manusia yang diperlukan.</pre>
           <div class="basic-demo-actions"><a href="https://chatgpt.com/" target="_blank" rel="noreferrer">Buka ChatGPT ↗</a><button type="button" class="copy-button" data-copy-target="chatgpt-basic-prompt">Salin arahan</button></div>
           <p class="teaching-point"><strong>Mesej utama:</strong> Minta AI merancang, melaksanakan dan mengaudit—manusia tetap meluluskan.</p>
         </article>
@@ -180,16 +185,17 @@ Gunakan Bahasa Melayu rasmi. Jangan tambah nama, tarikh, angka atau keputusan ya
             <li><strong>5 min</strong><span>Semak bagaimana beberapa sumber digabungkan.</span></li>
             <li><strong>2 min</strong><span>Periksa kebolehkesanan fakta dan batasan jawapan.</span></li>
           </ol>
-          <pre id="claude-basic-prompt">Teliti semua fail yang dilampirkan dan sediakan pakej susulan pascaprogram yang sedia disemak oleh urus setia UTM.
+          <pre id="claude-basic-prompt">Teliti semua fail rekaan yang dilampirkan dan sediakan draf pelan operasi pembasmian tempat pembiakan Aedes yang sedia disemak oleh urus setia UTM.
 
 Sebelum menulis, terangkan rancangan kerja ringkas anda. Kemudian hasilkan:
 - ringkasan pengurusan;
-- pengiraan kadar kehadiran dan purata skor;
-- jadual tindakan;
-- draf e-mel susulan; dan
+- pengiraan kehadiran mesyuarat dan jumlah petugas;
+- jadual operasi mengikut zon, kolej, tarikh dan unit;
+- senarai tindakan sebelum operasi;
+- draf hebahan kepada warga kolej; dan
 - senarai perkara yang memerlukan pengesahan manusia.
 
-Gunakan Bahasa Melayu rasmi. Setiap fakta dan angka mesti datang daripada fail. Jangan membuat andaian bagi nama, tarikh, pemilik atau keputusan yang tidak dinyatakan.</pre>
+Gunakan Bahasa Melayu rasmi. Setiap fakta dan angka mesti datang daripada fail. Jangan membuat andaian bagi nama, tarikh, pemilik atau keputusan yang tidak dinyatakan. Jangan berikan arahan teknikal kesihatan atau penggunaan bahan kimia; serahkan perkara tersebut kepada pihak yang kompeten.</pre>
           <div class="basic-demo-actions"><a href="https://claude.ai/new" target="_blank" rel="noreferrer">Buka Claude ↗</a><button type="button" class="copy-button" data-copy-target="claude-basic-prompt">Salin arahan</button></div>
           <p class="teaching-point"><strong>Mesej utama:</strong> Berikan konteks, bentuk hasil dan sempadan yang jelas.</p>
         </article>
@@ -240,31 +246,33 @@ Gunakan Bahasa Melayu rasmi. Setiap fakta dan angka mesti datang daripada fail. 
         <ol class="gem-field-list">
           <li class="gem-field">
             <div class="gem-field-label"><span>01</span><div><strong>Name</strong><small>Nama yang akan muncul dalam senarai Gems</small></div></div>
-            <div class="gem-field-value"><code id="gem-name">Pembantu Pascaprogram UTM</code><button type="button" class="copy-button" data-copy-target="gem-name">Salin</button></div>
+            <div class="gem-field-value"><code id="gem-name">Pembantu Penyelarasan Operasi Kampus UTM</code><button type="button" class="copy-button" data-copy-target="gem-name">Salin</button></div>
           </li>
 
           <li class="gem-field">
             <div class="gem-field-label"><span>02</span><div><strong>Description</strong><small>Terangkan fungsi Gem secara ringkas</small></div></div>
-            <div class="gem-field-value"><code id="gem-description">Menukar nota mesyuarat, rekod kehadiran dan maklum balas program kepada ringkasan pengurusan, jadual tindakan dan draf e-mel susulan yang mudah disemak.</code><button type="button" class="copy-button" data-copy-target="gem-description">Salin</button></div>
+            <div class="gem-field-value"><code id="gem-description">Menukar nota mesyuarat, rekod kehadiran dan cadangan penugasan kepada ringkasan, jadual operasi, senarai tindakan dan draf hebahan yang mudah disemak.</code><button type="button" class="copy-button" data-copy-target="gem-description">Salin</button></div>
           </li>
 
           <li class="gem-field gem-instructions-field">
             <div class="gem-field-label"><span>03</span><div><strong>Instructions</strong><small>Peranan, proses, batasan dan format hasil</small></div></div>
-            <div class="gem-field-value"><pre id="gem-instructions">Anda ialah Pembantu Pascaprogram UTM. Tugas anda ialah menukar bahan pascaprogram kepada hasil kerja yang tepat, ringkas dan sesuai untuk urusan rasmi.
+            <div class="gem-field-value"><pre id="gem-instructions">Anda ialah Pembantu Penyelarasan Operasi Kampus UTM. Tugas anda ialah menukar bahan perancangan operasi kepada hasil kerja yang tepat, ringkas dan sesuai untuk urusan rasmi.
 
 Apabila pengguna memberikan nota, rekod kehadiran atau maklum balas:
 
 1. Kenal pasti fakta, keputusan, isu dan perkara yang belum diputuskan.
-2. Kira kadar kehadiran dan purata skor hanya jika data mencukupi.
+2. Kira jumlah kehadiran dan jumlah petugas mengikut zon, tarikh dan unit hanya jika data mencukupi.
 3. Jangan mereka-reka nama, tarikh, angka, pemilik tindakan atau keputusan.
 4. Gunakan Bahasa Melayu rasmi, jelas dan tidak berbunga-bunga.
 5. Hasilkan:
    a. Ringkasan pengurusan;
-   b. Jadual tindakan dengan lajur Tindakan, Pemilik dan Tarikh;
-   c. Draf e-mel susulan kepada urus setia.
+   b. Jadual operasi mengikut zon, kolej, tarikh, unit dan bilangan petugas;
+   c. Senarai tindakan dengan lajur Tindakan, Pemilik dan Tarikh;
+   d. Draf hebahan kepada warga kolej.
 6. Tulis “Perlu disahkan” apabila pemilik, tarikh atau maklumat lain tiada dalam sumber.
 7. Akhiri setiap jawapan dengan bahagian “Semakan manusia diperlukan”.
-8. Jangan menghantar e-mel, mengubah fail sumber atau membuat tindakan luaran.
+8. Jangan memberi arahan teknikal kesihatan atau penggunaan bahan kimia; rujuk perkara tersebut kepada pihak yang kompeten.
+9. Jangan menghantar e-mel, mengubah fail sumber atau membuat tindakan luaran.
 
 Sebelum memberikan jawapan akhir, semak semula semua angka dan pastikan setiap kenyataan boleh dikesan kepada bahan yang diberikan.</pre><button type="button" class="copy-button" data-copy-target="gem-instructions">Salin Instructions</button></div>
           </li>
@@ -285,7 +293,7 @@ Sebelum memberikan jawapan akhir, semak semula semua angka dan pastikan setiap k
 
           <li class="gem-field preview-field">
             <div class="gem-field-label"><span>06</span><div><strong>Preview</strong><small>Uji Gem sebelum menekan Save</small></div></div>
-            <div class="gem-field-value"><code id="gem-preview">Berdasarkan semua fail Knowledge, sediakan pakej susulan pascaprogram. Tunjukkan pengiraan kehadiran dan purata skor, kemudian hasilkan ringkasan pengurusan, jadual tindakan dan draf e-mel.</code><button type="button" class="copy-button" data-copy-target="gem-preview">Salin prompt ujian</button></div>
+            <div class="gem-field-value"><code id="gem-preview">Berdasarkan semua fail Knowledge, sediakan draf pelan operasi pembasmian tempat pembiakan Aedes. Tunjukkan pengiraan kehadiran dan petugas, kemudian hasilkan ringkasan, jadual operasi, senarai tindakan dan draf hebahan.</code><button type="button" class="copy-button" data-copy-target="gem-preview">Salin prompt ujian</button></div>
           </li>
         </ol>
       </section>
@@ -316,19 +324,20 @@ Sebelum memberikan jawapan akhir, semak semula semua angka dan pastikan setiap k
             <div class="gem-field-label"><span>03</span><div><strong>Arahan tugas</strong><small>Salin ke kotak arahan Codex</small></div></div>
             <div class="gem-field-value"><pre id="codex-task">Bekerja hanya dalam repositori ini.
 
-Baca semua fail dalam folder `demo-files/`. Sediakan pakej susulan pascaprogram dengan langkah berikut:
+Baca semua fail dalam folder `demo-files/`. Sediakan draf pelan operasi pembasmian tempat pembiakan Aedes dengan langkah berikut:
 
 1. Periksa struktur dan kandungan semua fail sumber.
-2. Gunakan kod untuk mengira kadar kehadiran dan purata skor maklum balas.
+2. Gunakan kod untuk mengira jumlah kehadiran serta jumlah petugas mengikut zon, tarikh dan unit.
 3. Kenal pasti keputusan, isu dan tindakan susulan daripada nota mesyuarat.
 4. Cipta folder `demo-output/` jika belum ada.
 5. Hasilkan tiga fail Markdown:
    - `demo-output/ringkasan-pengurusan.md`
-   - `demo-output/jadual-tindakan.md`
-   - `demo-output/draf-emel-susulan.md`
+   - `demo-output/jadual-operasi.md`
+   - `demo-output/draf-hebahan.md`
 6. Gunakan Bahasa Melayu rasmi dan jangan tambah fakta yang tiada dalam sumber.
-7. Tulis “Perlu disahkan” apabila pemilik atau tarikh tidak dinyatakan.
-8. Jangan ubah atau padam fail sumber.
+7. Tulis “Perlu disahkan” apabila pemilik, lokasi atau tarikh tidak dinyatakan.
+8. Jangan cipta arahan teknikal kesihatan atau penggunaan bahan kimia.
+9. Jangan ubah atau padam fail sumber.
 
 Sebelum selesai, semak pengiraan, periksa ketiga-tiga fail output dan laporkan perkara yang memerlukan pengesahan manusia.</pre><button type="button" class="copy-button" data-copy-target="codex-task">Salin arahan Codex</button></div>
           </li>
@@ -359,7 +368,7 @@ Sebelum selesai, semak pengiraan, periksa ketiga-tiga fail output dan laporkan p
         <ol class="gem-field-list">
           <li class="gem-field">
             <div class="gem-field-label"><span>01</span><div><strong>Project name</strong><small>Nama ruang kerja Cowork</small></div></div>
-            <div class="gem-field-value"><code id="cowork-name">Demo Pascaprogram UTM</code><button type="button" class="copy-button" data-copy-target="cowork-name">Salin</button></div>
+            <div class="gem-field-value"><code id="cowork-name">Demo Operasi Aedes UTM</code><button type="button" class="copy-button" data-copy-target="cowork-name">Salin</button></div>
           </li>
 
           <li class="gem-field">
@@ -369,26 +378,26 @@ Sebelum selesai, semak pengiraan, periksa ketiga-tiga fail output dan laporkan p
 
           <li class="gem-field gem-instructions-field">
             <div class="gem-field-label"><span>03</span><div><strong>Project instructions</strong><small>Arahan yang digunakan untuk semua tugas projek</small></div></div>
-            <div class="gem-field-value"><pre id="cowork-instructions">Anda membantu urus setia UTM menyediakan hasil kerja pascaprogram.
+            <div class="gem-field-value"><pre id="cowork-instructions">Anda membantu urus setia UTM menyediakan draf pelan operasi kampus.
 
 Gunakan Bahasa Melayu rasmi, ringkas dan jelas. Gunakan hanya sumber dalam folder projek. Jangan mereka-reka fakta, angka, nama, tarikh atau pemilik tindakan. Tulis “Perlu disahkan” apabila maklumat tiada.
 
 Simpan hasil baharu dalam `demo-output/` dan jangan ubah atau padam fail dalam `demo-files/`. Sebelum menyelesaikan setiap tugas, semak fakta dan angka terhadap sumber serta senaraikan perkara yang memerlukan kelulusan manusia.
 
-Jangan menghantar e-mel, berkongsi fail, menggunakan laman web atau melakukan tindakan luaran tanpa kelulusan jelas daripada pengguna.</pre><button type="button" class="copy-button" data-copy-target="cowork-instructions">Salin Instructions</button></div>
+Jangan cipta arahan teknikal kesihatan atau penggunaan bahan kimia. Jangan menghantar e-mel, berkongsi fail, menggunakan laman web atau melakukan tindakan luaran tanpa kelulusan jelas daripada pengguna.</pre><button type="button" class="copy-button" data-copy-target="cowork-instructions">Salin Instructions</button></div>
           </li>
 
           <li class="gem-field gem-instructions-field">
             <div class="gem-field-label"><span>04</span><div><strong>Task</strong><small>Tugasan pertama dalam Cowork</small></div></div>
-            <div class="gem-field-value"><pre id="cowork-task">Teliti semua bahan dalam `demo-files/` dan sediakan pakej susulan pascaprogram yang boleh disemak oleh urus setia.
+            <div class="gem-field-value"><pre id="cowork-task">Teliti semua bahan dalam `demo-files/` dan sediakan draf pelan operasi pembasmian tempat pembiakan Aedes yang boleh disemak oleh urus setia.
 
 Hasilkan:
 1. Ringkasan pengurusan satu halaman;
-2. Jadual tindakan dengan pemilik dan tarikh;
-3. Draf e-mel susulan;
+2. Jadual operasi mengikut zon, kolej, tarikh, unit dan bilangan petugas;
+3. Draf hebahan kepada warga kolej;
 4. Nota audit yang menunjukkan sumber bagi fakta dan angka utama.
 
-Gunakan kod jika perlu untuk mengira kadar kehadiran dan purata skor. Simpan hasil dalam `demo-output/`. Mulakan dengan rancangan ringkas, kemudian teruskan tanpa menunggu kecuali tindakan memerlukan akses baharu atau boleh memberi kesan di luar folder projek.</pre><button type="button" class="copy-button" data-copy-target="cowork-task">Salin tugasan Cowork</button></div>
+Gunakan kod jika perlu untuk mengira kehadiran dan jumlah petugas. Jangan cipta arahan teknikal kesihatan atau penggunaan bahan kimia. Simpan hasil dalam `demo-output/`. Mulakan dengan rancangan ringkas, kemudian teruskan tanpa menunggu kecuali tindakan memerlukan akses baharu atau boleh memberi kesan di luar folder projek.</pre><button type="button" class="copy-button" data-copy-target="cowork-task">Salin tugasan Cowork</button></div>
           </li>
 
           <li class="gem-field">
@@ -493,6 +502,6 @@ Fasa 3: Semak fakta dan angka, nyatakan andaian, kemudian tunjukkan perubahan un
     <a href="#utama">Kembali ke atas ↑</a>
   </footer>
   <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
-  <script src="script.js"></script>
+  <script src="script.js?v=20260720-2"></script>
 </body>
 </html>

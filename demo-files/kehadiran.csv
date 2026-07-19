@@ -1,11 +1,13 @@
-id_peserta,kategori,daftar,hadir
-P001,Akademik,Ya,Ya
-P002,Pengurusan dan Profesional,Ya,Ya
-P003,Pelaksana,Ya,Tidak
-P004,Akademik,Ya,Ya
-P005,Pelaksana,Ya,Ya
-P006,Pengurusan dan Profesional,Ya,Ya
-P007,Akademik,Ya,Tidak
-P008,Pelaksana,Ya,Ya
-P009,Pengurusan dan Profesional,Ya,Ya
-P010,Akademik,Ya,Ya
+bil,wakil_rekaan,ptj_unit,peranan_dalam_mesyuarat,status_kehadiran
+1,Dr. Hana Razak,Pusat Kesihatan Universiti,Pengerusi dan nasihat kesihatan,Hadir
+2,Encik Amir Faisal,Pejabat Hal Ehwal Pelajar,Penyelarasan kebajikan dan hebahan,Hadir
+3,Puan Nur Aina,Unit Keselamatan,Kawalan laluan dan akses,Hadir
+4,Encik Faizal Rahman,Jabatan Harta Bina,Pembersihan longkang dan sisa,Hadir
+5,Dr. Siti Mariam,Fakulti Sains,Sukarelawan dan komunikasi risiko,Hadir
+6,Puan Salmah Idris,Kolej Tun Fatimah,Penyelarasan kolej,Hadir
+7,Encik Johan Lee,Kolej Rahman Putra,Penyelarasan kolej,Hadir
+8,Puan Kavitha Nair,Kolej Tun Dr Ismail,Penyelarasan kolej,Hadir
+9,Encik Ridzuan Omar,Kolej Datin Seri Endon,Penyelarasan kolej,Hadir
+10,Puan Farah Wahida,Kolej Perdana,Penyelarasan kolej,Tidak hadir
+11,Encik Azlan Hamid,Kolej 9 & 10,Penyelarasan kolej,Hadir
+12,Puan Nadia Karim,Pejabat Komunikasi Korporat,Dokumentasi dan hebahan,Hadir
