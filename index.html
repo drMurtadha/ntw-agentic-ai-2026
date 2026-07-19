@@ -113,14 +113,85 @@
 
     <section class="demo-section" id="demo">
       <div class="section-heading light">
-        <p class="eyebrow">DEMONSTRASI LANGSUNG</p>
-        <h2>Tiga bentuk delegasi, satu senario kerja.</h2>
-        <p>Setiap platform menggunakan bahan contoh yang sama supaya perbezaannya mudah dilihat.</p>
+        <p class="eyebrow">LAUNCHPAD DEMONSTRASI</p>
+        <h2>Buka platform, salin arahan, terus demonstrasi.</h2>
+        <p>Setiap pautan dibuka dalam tab baharu. Log masuk lebih awal supaya pertukaran platform semasa Google Meet berjalan lancar.</p>
       </div>
-      <div class="demo-grid">
-        <article><span class="demo-number">01</span><h3>Gemini + Gems</h3><p>Menjadikan arahan berulang sebagai pembantu khusus dalam ekosistem Google.</p><a href="materials/01-gemini-gem.md">Buka arahan demo →</a></article>
-        <article><span class="demo-number">02</span><h3>Codex</h3><p>Bekerja dalam repositori, mengira data dan menghasilkan fail yang boleh disemak.</p><a href="materials/02-codex.md">Buka arahan demo →</a></article>
-        <article><span class="demo-number">03</span><h3>Claude Cowork</h3><p>Mendelegasikan kerja pengetahuan berbilang langkah daripada bahan kepada hasil siap.</p><a href="materials/03-claude-cowork.md">Buka arahan demo →</a></article>
+      <div class="platform-grid">
+        <article class="platform-card gemini-card">
+          <span class="demo-number">01</span>
+          <p class="platform-kicker">GOOGLE</p>
+          <h3>Gemini + Gems</h3>
+          <p>Buka pengurus Gems untuk menunjukkan pembantu khusus bagi arahan yang berulang.</p>
+          <a class="launch-button" href="https://gemini.google.com/gems/view" target="_blank" rel="noreferrer">Buka Gemini Gems ↗</a>
+          <small>Gunakan akaun yang mempunyai akses Gemini.</small>
+        </article>
+        <article class="platform-card codex-card">
+          <span class="demo-number">02</span>
+          <p class="platform-kicker">OPENAI</p>
+          <h3>ChatGPT Codex</h3>
+          <p>Buka Codex untuk menunjukkan agent bekerja dengan repositori dan fail projek.</p>
+          <a class="launch-button" href="https://chatgpt.com/codex/" target="_blank" rel="noreferrer">Buka ChatGPT Codex ↗</a>
+          <small>Untuk fail tempatan, gunakan mod Codex dalam aplikasi desktop.</small>
+        </article>
+        <article class="platform-card claude-card">
+          <span class="demo-number">03</span>
+          <p class="platform-kicker">ANTHROPIC</p>
+          <h3>Claude Cowork</h3>
+          <p>Buka Claude, kemudian pilih <strong>Cowork</strong> pada kotak mesej sebelum memberi tugasan.</p>
+          <a class="launch-button" href="https://claude.ai/" target="_blank" rel="noreferrer">Buka Claude Cowork ↗</a>
+          <small>Cowork memerlukan pelan Claude yang layak.</small>
+        </article>
+      </div>
+
+      <div class="prompt-heading">
+        <p class="eyebrow">CORAK ARAHAN</p>
+        <h3>Pilih arahan mengikut masa dan tahap demonstrasi.</h3>
+        <p>Tekan butang <strong>Salin arahan</strong>—tidak perlu memilih teks secara manual.</p>
+      </div>
+
+      <div class="prompt-grid">
+        <article class="prompt-card">
+          <div class="prompt-card-head"><div><span>01 · RINGKAS</span><h4>Satu hasil yang jelas</h4></div><button type="button" class="copy-button" data-copy-target="prompt-ringkas">Salin arahan</button></div>
+          <pre id="prompt-ringkas">Baca semua bahan program yang saya berikan. Sediakan ringkasan pengurusan satu halaman dalam Bahasa Melayu rasmi. Gunakan hanya fakta daripada bahan dan tandakan maklumat yang perlu saya sahkan.</pre>
+        </article>
+
+        <article class="prompt-card">
+          <div class="prompt-card-head"><div><span>02 · BERSTRUKTUR</span><h4>Formula lima komponen</h4></div><button type="button" class="copy-button" data-copy-target="prompt-berstruktur">Salin arahan</button></div>
+          <pre id="prompt-berstruktur">Matlamat: Sediakan pakej susulan pascaprogram untuk urus setia.
+
+Bahan: Gunakan nota mesyuarat, rekod kehadiran dan maklum balas yang diberikan.
+
+Batasan: Gunakan Bahasa Melayu rasmi. Jangan tambah fakta, nama, tarikh atau pemilik tindakan yang tiada dalam sumber.
+
+Hasil: Sediakan (1) ringkasan pengurusan, (2) jadual tindakan dan (3) draf e-mel susulan.
+
+Semakan: Semak semula semua angka dan senaraikan perkara yang memerlukan pengesahan manusia.</pre>
+        </article>
+
+        <article class="prompt-card">
+          <div class="prompt-card-head"><div><span>03 · BERAGENT</span><h4>Rancang, laksana dan audit</h4></div><button type="button" class="copy-button" data-copy-target="prompt-beragent">Salin arahan</button></div>
+          <pre id="prompt-beragent">Teliti folder projek ini dan fahami bahan yang tersedia. Bentangkan rancangan kerja ringkas, kemudian teruskan tugas berikut:
+
+1. Kira kadar kehadiran dan purata skor maklum balas.
+2. Kenal pasti keputusan, isu dan tindakan susulan.
+3. Hasilkan ringkasan pengurusan, jadual tindakan dan draf e-mel.
+4. Simpan hasil sebagai fail baharu tanpa mengubah fail sumber.
+5. Audit hasil terhadap sumber sebelum selesai.
+
+Gunakan “Perlu disahkan” bagi maklumat yang tiada. Jangan menghantar e-mel, memadam fail atau membuat tindakan luaran.</pre>
+        </article>
+
+        <article class="prompt-card">
+          <div class="prompt-card-head"><div><span>04 · BERPENGAWASAN</span><h4>Kelulusan manusia dahulu</h4></div><button type="button" class="copy-button" data-copy-target="prompt-pengawasan">Salin arahan</button></div>
+          <pre id="prompt-pengawasan">Bantu saya menyediakan laporan susulan berdasarkan bahan yang diberikan.
+
+Fasa 1: Senaraikan fail yang ditemui, fakta utama dan jurang maklumat. Cadangkan rancangan kerja dan tunggu kelulusan saya.
+
+Fasa 2 selepas diluluskan: Hasilkan draf laporan dan jadual tindakan. Jangan ubah sumber atau melakukan tindakan luaran.
+
+Fasa 3: Semak fakta dan angka, nyatakan andaian, kemudian tunjukkan perubahan untuk semakan akhir manusia.</pre>
+        </article>
       </div>
     </section>
 
@@ -154,6 +225,7 @@
     <p><strong>Memanfaatkan Agentic AI untuk Meningkatkan Produktiviti Harian</strong><br>Prof. Madya Dr. Mohd Murtadha Mohamad · NTW 2026</p>
     <a href="#utama">Kembali ke atas ↑</a>
   </footer>
+  <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
   <script src="script.js"></script>
 </body>
 </html>
