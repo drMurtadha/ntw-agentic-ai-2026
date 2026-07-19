@@ -179,3 +179,16 @@ h1,h2,h3,.brand,.eyebrow,.label,.mini-flow,.scenario-goal strong,.formula-list s
 .preview-field{background:#e3faf7;padding-left:16px;padding-right:16px}
 @media(max-width:900px){.gem-setup{margin-top:70px;padding:30px}.gem-field{grid-template-columns:1fr}.knowledge-files{grid-template-columns:1fr}}
 @media(max-width:560px){.gem-setup{padding:22px 18px}.gem-setup-intro h3{font-size:30px}.gem-field-value{display:block}.gem-field-value .copy-button{margin-top:12px}.gem-instructions-field pre{max-height:360px}.preview-field{padding-left:12px;padding-right:12px}}
+.platform-card .setup-link{display:inline-block;margin-top:12px;color:var(--teal);font-size:14px;font-weight:800}
+.platform-card .setup-link:hover{color:var(--lime)}
+.workflow-setup{margin-top:30px;padding:44px;background:#f4f7f9;color:var(--ink)}
+.workflow-setup-intro{max-width:900px;margin-bottom:38px}
+.workflow-setup-intro h3{margin:0;font-size:38px;line-height:1.12}
+.workflow-setup-intro>p:last-child{color:var(--muted);font-size:18px}
+.codex-setup{border-top:8px solid #3d8dff}
+.cowork-setup{border-top:8px solid #d97757}
+.project-actions{display:grid;grid-template-columns:auto 1fr auto;align-items:start}
+.project-actions>a{padding:12px 14px;background:var(--ink);color:white;font-weight:800}
+.project-actions code{min-width:0;overflow-wrap:anywhere}
+@media(max-width:900px){.workflow-setup{padding:30px}.project-actions{grid-template-columns:1fr}.project-actions .copy-button{width:max-content}}
+@media(max-width:560px){.workflow-setup{padding:22px 18px}.workflow-setup-intro h3{font-size:30px}.project-actions .copy-button{width:100%}}

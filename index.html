@@ -124,6 +124,7 @@
           <h3>Gemini + Gems</h3>
           <p>Buka pengurus Gems untuk menunjukkan pembantu khusus bagi arahan yang berulang.</p>
           <a class="launch-button" href="https://gemini.google.com/gems/view" target="_blank" rel="noreferrer">Buka Gemini Gems ↗</a>
+          <a class="setup-link" href="#gem-setup">Panduan setup ↓</a>
           <small>Gunakan akaun yang mempunyai akses Gemini.</small>
         </article>
         <article class="platform-card codex-card">
@@ -132,6 +133,7 @@
           <h3>ChatGPT Codex</h3>
           <p>Buka Codex untuk menunjukkan agent bekerja dengan repositori dan fail projek.</p>
           <a class="launch-button" href="https://chatgpt.com/codex/" target="_blank" rel="noreferrer">Buka ChatGPT Codex ↗</a>
+          <a class="setup-link" href="#codex-setup">Panduan setup ↓</a>
           <small>Untuk fail tempatan, gunakan mod Codex dalam aplikasi desktop.</small>
         </article>
         <article class="platform-card claude-card">
@@ -140,6 +142,7 @@
           <h3>Claude Cowork</h3>
           <p>Buka Claude, kemudian pilih <strong>Cowork</strong> pada kotak mesej sebelum memberi tugasan.</p>
           <a class="launch-button" href="https://claude.ai/" target="_blank" rel="noreferrer">Buka Claude Cowork ↗</a>
+          <a class="setup-link" href="#cowork-setup">Panduan setup ↓</a>
           <small>Cowork memerlukan pelan Claude yang layak.</small>
         </article>
       </div>
@@ -200,6 +203,115 @@ Sebelum memberikan jawapan akhir, semak semula semua angka dan pastikan setiap k
           <li class="gem-field preview-field">
             <div class="gem-field-label"><span>06</span><div><strong>Preview</strong><small>Uji Gem sebelum menekan Save</small></div></div>
             <div class="gem-field-value"><code id="gem-preview">Berdasarkan semua fail Knowledge, sediakan pakej susulan pascaprogram. Tunjukkan pengiraan kehadiran dan purata skor, kemudian hasilkan ringkasan pengurusan, jadual tindakan dan draf e-mel.</code><button type="button" class="copy-button" data-copy-target="gem-preview">Salin prompt ujian</button></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="workflow-setup codex-setup" id="codex-setup" aria-labelledby="codex-setup-title">
+        <div class="workflow-setup-intro">
+          <p class="eyebrow">SETUP CHATGPT CODEX</p>
+          <h3 id="codex-setup-title">Codex memerlukan ruang projek dan hasil kerja yang jelas.</h3>
+          <p>Untuk demo fail tempatan, gunakan mod Codex dalam aplikasi desktop dan buka folder repositori ini. Codex boleh membaca fail, membuat pengiraan dan menghasilkan fail baharu untuk diperiksa.</p>
+        </div>
+
+        <ol class="gem-field-list">
+          <li class="gem-field">
+            <div class="gem-field-label"><span>01</span><div><strong>Buka projek</strong><small>Gunakan folder tempatan atau repositori GitHub</small></div></div>
+            <div class="gem-field-value project-actions">
+              <a href="https://github.com/drMurtadha/ntw-agentic-ai-2026" target="_blank" rel="noreferrer">Buka repositori ↗</a>
+              <code id="codex-clone">git clone https://github.com/drMurtadha/ntw-agentic-ai-2026.git</code>
+              <button type="button" class="copy-button" data-copy-target="codex-clone">Salin arahan clone</button>
+            </div>
+          </li>
+
+          <li class="gem-field">
+            <div class="gem-field-label"><span>02</span><div><strong>Pilih folder</strong><small>Buka folder yang baru di-clone dalam Codex</small></div></div>
+            <div class="gem-field-value gem-choice"><code>ntw-agentic-ai-2026</code><span>Fail input demo berada dalam folder <strong>demo-files/</strong>. Minta Codex menyimpan hasil dalam folder baharu <strong>demo-output/</strong>.</span></div>
+          </li>
+
+          <li class="gem-field gem-instructions-field">
+            <div class="gem-field-label"><span>03</span><div><strong>Arahan tugas</strong><small>Salin ke kotak arahan Codex</small></div></div>
+            <div class="gem-field-value"><pre id="codex-task">Bekerja hanya dalam repositori ini.
+
+Baca semua fail dalam folder `demo-files/`. Sediakan pakej susulan pascaprogram dengan langkah berikut:
+
+1. Periksa struktur dan kandungan semua fail sumber.
+2. Gunakan kod untuk mengira kadar kehadiran dan purata skor maklum balas.
+3. Kenal pasti keputusan, isu dan tindakan susulan daripada nota mesyuarat.
+4. Cipta folder `demo-output/` jika belum ada.
+5. Hasilkan tiga fail Markdown:
+   - `demo-output/ringkasan-pengurusan.md`
+   - `demo-output/jadual-tindakan.md`
+   - `demo-output/draf-emel-susulan.md`
+6. Gunakan Bahasa Melayu rasmi dan jangan tambah fakta yang tiada dalam sumber.
+7. Tulis “Perlu disahkan” apabila pemilik atau tarikh tidak dinyatakan.
+8. Jangan ubah atau padam fail sumber.
+
+Sebelum selesai, semak pengiraan, periksa ketiga-tiga fail output dan laporkan perkara yang memerlukan pengesahan manusia.</pre><button type="button" class="copy-button" data-copy-target="codex-task">Salin arahan Codex</button></div>
+          </li>
+
+          <li class="gem-field">
+            <div class="gem-field-label"><span>04</span><div><strong>Semak rancangan</strong><small>Lihat fail dan tindakan yang dicadangkan</small></div></div>
+            <div class="gem-field-value gem-choice"><code>Benarkan baca/tulis dalam folder projek sahaja</code><span>Jangan beri akses lebih luas daripada yang diperlukan. Semak rancangan sebelum meluluskan tindakan tambahan.</span></div>
+          </li>
+
+          <li class="gem-field preview-field">
+            <div class="gem-field-label"><span>05</span><div><strong>Prompt susulan</strong><small>Tunjukkan gelung semakan agent</small></div></div>
+            <div class="gem-field-value"><code id="codex-followup">Audit semula semua hasil terhadap fail sumber. Nyatakan formula pengiraan, senaraikan setiap andaian, dan baiki mana-mana ketidakselarasan yang ditemui. Jangan ubah fail sumber.</code><button type="button" class="copy-button" data-copy-target="codex-followup">Salin prompt susulan</button></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="workflow-setup cowork-setup" id="cowork-setup" aria-labelledby="cowork-setup-title">
+        <div class="workflow-setup-intro">
+          <p class="eyebrow">SETUP CLAUDE COWORK</p>
+          <h3 id="cowork-setup-title">Cowork menerima hasil yang dikehendaki, konteks dan tahap kawalan.</h3>
+          <p>Dalam Claude, pilih <strong>Cowork</strong>. Untuk akses folder tempatan, gunakan aplikasi desktop, cipta projek dan pilih <strong>Use an existing folder</strong>.</p>
+        </div>
+
+        <ol class="gem-field-list">
+          <li class="gem-field">
+            <div class="gem-field-label"><span>01</span><div><strong>Project name</strong><small>Nama ruang kerja Cowork</small></div></div>
+            <div class="gem-field-value"><code id="cowork-name">Demo Pascaprogram UTM</code><button type="button" class="copy-button" data-copy-target="cowork-name">Salin</button></div>
+          </li>
+
+          <li class="gem-field">
+            <div class="gem-field-label"><span>02</span><div><strong>Context / folder</strong><small>Gunakan folder sedia ada pada komputer</small></div></div>
+            <div class="gem-field-value gem-choice"><code>ntw-agentic-ai-2026</code><span>Pilih folder repositori. Cowork akan menggunakan fail dalam <strong>demo-files/</strong> sebagai konteks.</span></div>
+          </li>
+
+          <li class="gem-field gem-instructions-field">
+            <div class="gem-field-label"><span>03</span><div><strong>Project instructions</strong><small>Arahan yang digunakan untuk semua tugas projek</small></div></div>
+            <div class="gem-field-value"><pre id="cowork-instructions">Anda membantu urus setia UTM menyediakan hasil kerja pascaprogram.
+
+Gunakan Bahasa Melayu rasmi, ringkas dan jelas. Gunakan hanya sumber dalam folder projek. Jangan mereka-reka fakta, angka, nama, tarikh atau pemilik tindakan. Tulis “Perlu disahkan” apabila maklumat tiada.
+
+Simpan hasil baharu dalam `demo-output/` dan jangan ubah atau padam fail dalam `demo-files/`. Sebelum menyelesaikan setiap tugas, semak fakta dan angka terhadap sumber serta senaraikan perkara yang memerlukan kelulusan manusia.
+
+Jangan menghantar e-mel, berkongsi fail, menggunakan laman web atau melakukan tindakan luaran tanpa kelulusan jelas daripada pengguna.</pre><button type="button" class="copy-button" data-copy-target="cowork-instructions">Salin Instructions</button></div>
+          </li>
+
+          <li class="gem-field gem-instructions-field">
+            <div class="gem-field-label"><span>04</span><div><strong>Task</strong><small>Tugasan pertama dalam Cowork</small></div></div>
+            <div class="gem-field-value"><pre id="cowork-task">Teliti semua bahan dalam `demo-files/` dan sediakan pakej susulan pascaprogram yang boleh disemak oleh urus setia.
+
+Hasilkan:
+1. Ringkasan pengurusan satu halaman;
+2. Jadual tindakan dengan pemilik dan tarikh;
+3. Draf e-mel susulan;
+4. Nota audit yang menunjukkan sumber bagi fakta dan angka utama.
+
+Gunakan kod jika perlu untuk mengira kadar kehadiran dan purata skor. Simpan hasil dalam `demo-output/`. Mulakan dengan rancangan ringkas, kemudian teruskan tanpa menunggu kecuali tindakan memerlukan akses baharu atau boleh memberi kesan di luar folder projek.</pre><button type="button" class="copy-button" data-copy-target="cowork-task">Salin tugasan Cowork</button></div>
+          </li>
+
+          <li class="gem-field">
+            <div class="gem-field-label"><span>05</span><div><strong>Review</strong><small>Semak rancangan, kemajuan dan output</small></div></div>
+            <div class="gem-field-value gem-choice"><code>Hadkan akses kepada folder projek</code><span>Benarkan penulisan fail output, tetapi jangan benarkan penghantaran, perkongsian atau pemadaman.</span></div>
+          </li>
+
+          <li class="gem-field preview-field">
+            <div class="gem-field-label"><span>06</span><div><strong>Prompt susulan</strong><small>Minta Cowork menilai hasil sendiri</small></div></div>
+            <div class="gem-field-value"><code id="cowork-followup">Sebelum saya menerima hasil ini, lakukan pemeriksaan kualiti akhir: sahkan semua angka, kesan kenyataan yang tidak disokong sumber, periksa format ketiga-tiga deliverable dan senaraikan keputusan yang masih memerlukan manusia.</code><button type="button" class="copy-button" data-copy-target="cowork-followup">Salin prompt susulan</button></div>
           </li>
         </ol>
       </section>
