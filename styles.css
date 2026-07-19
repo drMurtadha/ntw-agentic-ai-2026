@@ -25,6 +25,15 @@ nav a:hover{color:var(--teal)}
 .session-meta dt{color:var(--muted);font-size:12px;text-transform:uppercase}
 .session-meta dd{margin:3px 0 0;font-weight:700}
 .hero-visual{position:relative;aspect-ratio:1;display:grid;place-items:center}
+.presenter-visual{position:relative;max-width:360px;margin:0 0 0 auto;transform:translateY(-30px)}
+.presenter-photo-frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--panel);border:1px solid var(--line);box-shadow:18px 18px 0 var(--lime)}
+.presenter-photo-frame::before{content:"";position:absolute;inset:0;z-index:1;border:8px solid rgba(255,248,231,.72);pointer-events:none}
+.presenter-photo-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.presenter-tag{position:absolute;left:20px;top:20px;z-index:2;padding:9px 12px;background:var(--teal);color:white;font-size:11px;font-weight:900;letter-spacing:.1em}
+.presenter-visual figcaption{position:relative;z-index:3;width:calc(100% - 42px);margin:-54px 0 0 21px;padding:18px 20px;background:var(--ink);color:white;box-shadow:0 14px 35px rgba(74,11,16,.22)}
+.presenter-visual figcaption strong,.presenter-visual figcaption span{display:block}
+.presenter-visual figcaption strong{font:700 19px/1.25 "Space Grotesk"}
+.presenter-visual figcaption span{margin-top:5px;color:#f0d7c4;font-size:12px}
 .orbit{position:absolute;border:1px solid var(--line);border-radius:50%}
 .orbit-one{width:88%;height:88%}
 .orbit-two{width:62%;height:62%;border-style:dashed}
@@ -148,6 +157,7 @@ footer a{color:var(--lime);font-weight:700}
 .header-cta{margin-left:auto}
 .hero{grid-template-columns:1fr;padding:64px 24px}
 .hero-visual{max-width:500px;margin:auto}
+.presenter-visual{width:min(100%,470px);margin:20px auto 0;transform:none}
 .statement,.process-section,.scenario,.formula,.safety,.resources{padding:80px 24px}
 .comparison,.formula,.resources{grid-template-columns:1fr}
 .process-list{grid-template-columns:1fr 1fr}
@@ -162,6 +172,8 @@ footer a{color:var(--lime);font-weight:700}
 @media(max-width:560px){.header-cta{display:none}
 .hero h1{font-size:44px}
 .hero-visual{display:none}
+.presenter-photo-frame{aspect-ratio:5/6;box-shadow:10px 10px 0 var(--lime)}
+.presenter-visual figcaption{width:calc(100% - 24px);margin:-42px 0 0 12px;padding:15px 16px}
 .comparison,.process-list{grid-template-columns:1fr}
 .process-list li:not(:last-child)::after{content:"↓";right:50%;top:auto;bottom:-24px}
 .session-meta{display:grid;gap:16px}
