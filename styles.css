@@ -192,3 +192,14 @@ h1,h2,h3,.brand,.eyebrow,.label,.mini-flow,.scenario-goal strong,.formula-list s
 .project-actions code{min-width:0;overflow-wrap:anywhere}
 @media(max-width:900px){.workflow-setup{padding:30px}.project-actions{grid-template-columns:1fr}.project-actions .copy-button{width:max-content}}
 @media(max-width:560px){.workflow-setup{padding:22px 18px}.workflow-setup-intro h3{font-size:30px}.project-actions .copy-button{width:100%}}
+.prompt-library{margin-top:70px;border:1px solid #314054}
+.prompt-library>summary{position:relative;display:grid;gap:5px;padding:26px 68px 26px 28px;background:#101f35;cursor:pointer;list-style:none}
+.prompt-library>summary::-webkit-details-marker{display:none}
+.prompt-library>summary::after{content:"+";position:absolute;right:28px;top:50%;transform:translateY(-50%);color:var(--lime);font-size:34px;font-weight:400}
+.prompt-library[open]>summary::after{content:"−"}
+.prompt-library>summary span{color:var(--lime);font-size:12px;font-weight:800;letter-spacing:.1em}
+.prompt-library>summary strong{font:700 25px "Space Grotesk","DM Sans",Arial,sans-serif}
+.prompt-library>summary small{color:#bac6d4;font-size:15px}
+.prompt-library .prompt-heading{margin:0;padding:44px 28px 28px;border-top:1px solid #314054}
+.prompt-library .prompt-grid{padding:0 28px 28px}
+@media(max-width:560px){.prompt-library>summary{padding:22px 58px 22px 20px}.prompt-library>summary::after{right:20px}.prompt-library .prompt-heading{padding:32px 18px 22px}.prompt-library .prompt-grid{padding:0 18px 18px}}
