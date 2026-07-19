@@ -29,11 +29,11 @@ nav a:hover{color:var(--teal)}
 .presenter-photo-frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--panel);border:1px solid var(--line);box-shadow:18px 18px 0 var(--lime)}
 .presenter-photo-frame::before{content:"";position:absolute;inset:0;z-index:1;border:8px solid rgba(255,248,231,.72);pointer-events:none}
 .presenter-photo-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 18%}
-.presenter-tag{position:absolute;left:20px;top:20px;z-index:2;padding:9px 12px;background:var(--teal);color:white;font-size:11px;font-weight:900;letter-spacing:.1em}
+.presenter-visual figcaption .presenter-tag{display:inline-block;margin:0 0 9px;padding:5px 8px;background:var(--teal);color:white;font-size:10px;font-weight:900;letter-spacing:.1em}
 .presenter-visual figcaption{position:relative;z-index:3;width:calc(100% - 42px);margin:-54px 0 0 21px;padding:18px 20px;background:var(--ink);color:white;box-shadow:0 14px 35px rgba(74,11,16,.22)}
-.presenter-visual figcaption strong,.presenter-visual figcaption span{display:block}
+.presenter-visual figcaption strong,.presenter-visual figcaption>span:last-child{display:block}
 .presenter-visual figcaption strong{font:700 19px/1.25 "Space Grotesk"}
-.presenter-visual figcaption span{margin-top:5px;color:#f0d7c4;font-size:12px}
+.presenter-visual figcaption>span:last-child{margin-top:5px;color:#f0d7c4;font-size:12px}
 .orbit{position:absolute;border:1px solid var(--line);border-radius:50%}
 .orbit-one{width:88%;height:88%}
 .orbit-two{width:62%;height:62%;border-style:dashed}
