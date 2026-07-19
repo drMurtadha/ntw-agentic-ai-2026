@@ -78,6 +78,16 @@ nav a:hover{color:var(--teal)}
 .formula-list strong{font:700 21px "Space Grotesk"}
 .formula-list p{margin:0;color:var(--muted)}
 .demo-section{padding:110px max(24px,calc((100vw - var(--max))/2));background:var(--ink);color:white}
+.beginner-path{margin-bottom:28px;padding:30px;background:white;color:var(--ink);border-top:7px solid var(--lime)}
+.beginner-path-intro{display:grid;grid-template-columns:220px 1fr;gap:30px;align-items:start;margin-bottom:26px}
+.beginner-path-intro h3{max-width:780px;margin:0;font:700 30px/1.15 "Space Grotesk"}
+.beginner-path ol{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0;padding:0;list-style:none}
+.beginner-path li{position:relative;min-height:170px;padding:20px;background:var(--panel)}
+.beginner-path li>span{color:var(--teal);font-size:13px;font-weight:900}
+.beginner-path li>strong{display:block;margin:22px 0 7px;font:700 19px "Space Grotesk"}
+.beginner-path li>p{margin:0;color:var(--muted);font-size:14px}
+.beginner-fallback{display:grid;grid-template-columns:190px 1fr;gap:18px;margin-top:14px;padding:16px 18px;background:#fff4dc;border-left:4px solid #e8a100}
+.beginner-fallback span{color:var(--muted);font-size:14px}
 .basic-demo-note{display:grid;grid-template-columns:150px 1fr auto;align-items:center;gap:22px;margin-bottom:28px;padding:20px 22px;background:#dff8f5;color:var(--ink);border-left:5px solid var(--teal)}
 .basic-demo-note>strong{font:700 18px "Space Grotesk"}
 .basic-demo-note>span{color:var(--muted)}
@@ -86,6 +96,7 @@ nav a:hover{color:var(--teal)}
 .facilitator-check{margin:-12px 0 28px;border:1px solid #314054;background:#101f35}
 .facilitator-check summary{padding:14px 18px;color:var(--lime);font-size:13px;font-weight:800;cursor:pointer}
 .facilitator-check p{margin:0;padding:0 18px 18px;color:#bac6d4;font-size:14px}
+.facilitator-check p a{color:var(--lime);font-weight:800;text-decoration:underline;text-underline-offset:3px}
 .basic-demo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .basic-demo-card{display:flex;flex-direction:column;min-width:0;padding:26px;background:#101f35;border:1px solid #314054}
 .basic-demo-card.featured{border-color:var(--teal)}
@@ -143,7 +154,7 @@ footer a{color:var(--lime);font-weight:700}
 .scenario-goal{border-right:0;border-bottom:4px solid var(--teal);padding:0 0 28px}
 .demo-grid,.safety-grid{grid-template-columns:1fr}
 .demo-section{padding:80px 24px}
-.basic-demo-note{grid-template-columns:1fr}.basic-demo-grid{grid-template-columns:1fr}.basic-demo-card pre{min-height:auto;max-height:430px}
+.beginner-path-intro{grid-template-columns:1fr}.beginner-path ol{grid-template-columns:1fr 1fr}.basic-demo-note{grid-template-columns:1fr}.basic-demo-grid{grid-template-columns:1fr}.basic-demo-card pre{min-height:auto;max-height:430px}
 .section-heading{display:block}
 .session-meta{flex-wrap:wrap}
 }
@@ -159,7 +170,7 @@ footer a{color:var(--lime);font-weight:700}
 .resource-links a{align-items:start;gap:16px;flex-direction:column}
 footer{display:block}
 footer a{display:inline-block;margin-top:24px}
-.basic-demo-note{padding:18px}.basic-demo-actions{grid-template-columns:1fr}.advanced-heading h3{font-size:30px}
+.beginner-path{padding:22px 18px}.beginner-path ol{grid-template-columns:1fr}.beginner-path li{min-height:auto}.beginner-fallback{grid-template-columns:1fr}.basic-demo-note{padding:18px}.basic-demo-actions{grid-template-columns:1fr}.advanced-heading h3{font-size:30px}
 }
 h1,h2,h3,.brand,.eyebrow,.label,.mini-flow,.scenario-goal strong,.formula-list strong,.agent-core strong{font-family:"Space Grotesk","DM Sans",Arial,sans-serif!important}
 .platform-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}

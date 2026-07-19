@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260720-2">
+  <link rel="stylesheet" href="styles.css?v=20260720-3">
 </head>
 <body>
   <header class="site-header">
@@ -87,12 +87,12 @@
     <section class="scenario">
       <div class="section-heading">
         <p class="eyebrow">CONTOH KERJA UTM</p>
-        <h2>Selepas program, agent menyediakan pakej susulan.</h2>
+        <h2>Daripada bahan mesyuarat kepada draf pelan operasi kampus.</h2>
       </div>
       <div class="scenario-flow">
-        <div class="scenario-goal"><small>MATLAMAT</small><strong>Sediakan pakej susulan untuk urus setia.</strong></div>
-        <div class="scenario-column"><small>SUMBER</small><span>Nota mesyuarat</span><span>Rekod kehadiran</span><span>Maklum balas</span></div>
-        <div class="scenario-column output"><small>HASIL</small><span>Ringkasan pengurusan</span><span>Jadual tindakan</span><span>Draf e-mel susulan</span></div>
+        <div class="scenario-goal"><small>MATLAMAT</small><strong>Sediakan draf pelan operasi pembasmian tempat pembiakan Aedes.</strong></div>
+        <div class="scenario-column"><small>SUMBER</small><span>Nota mesyuarat</span><span>Kehadiran wakil</span><span>Cadangan penugasan</span></div>
+        <div class="scenario-column output"><small>HASIL</small><span>Ringkasan pengurusan</span><span>Jadual operasi</span><span>Draf hebahan</span></div>
       </div>
     </section>
 
@@ -118,6 +118,22 @@
         <p>Gunakan satu senario yang sama pada Gemini, ChatGPT dan Claude biasa. Setiap pautan dibuka dalam tab baharu; log masuk lebih awal supaya pertukaran platform semasa Google Meet berjalan lancar.</p>
       </div>
 
+      <section class="beginner-path" aria-labelledby="beginner-path-title">
+        <div class="beginner-path-intro">
+          <p class="eyebrow">MULA DI SINI · CUBA SENDIRI</p>
+          <h3 id="beginner-path-title">Pilih satu platform sahaja—tidak perlu mencuba ketiga-tiganya serentak.</h3>
+        </div>
+        <ol>
+          <li><span>01</span><strong>Muat turun</strong><p>Simpan tiga fail rekaan di bawah dalam satu folder yang mudah ditemui.</p></li>
+          <li><span>02</span><strong>Pilih satu</strong><p>Gunakan Gemini, ChatGPT atau Claude biasa mengikut akaun yang tersedia.</p></li>
+          <li><span>03</span><strong>Lampirkan fail</strong><p>Tekan ikon <b>+</b> atau klip kertas, pilih ketiga-tiga fail dan tunggu sehingga nama fail muncul.</p></li>
+          <li><span>04</span><strong>Salin arahan</strong><p>Tekan butang “Salin arahan” pada kad platform yang dipilih.</p></li>
+          <li><span>05</span><strong>Tampal & hantar</strong><p>Tampal arahan pada kotak mesej, kemudian hantar dan tunggu hasil lengkap.</p></li>
+          <li><span>06</span><strong>Semak</strong><p>Bandingkan angka, fakta dan perkara “Perlu disahkan” dengan jawapan rujukan.</p></li>
+        </ol>
+        <div class="beginner-fallback"><strong>Jika fungsi lampiran tiada:</strong><span>Buka fail nota mesyuarat, salin kandungannya ke ruang chat dan cuba arahan menggunakan satu fail dahulu. Peserta juga boleh sekadar mengikuti demonstrasi penceramah.</span></div>
+      </section>
+
       <div class="basic-demo-note">
         <strong>Senario bersama</strong>
         <span>AI membantu urus setia menyusun rancangan operasi pembasmian tempat pembiakan Aedes daripada nota mesyuarat, rekod kehadiran wakil dan maklum balas penugasan. Semua nama dan maklumat ialah rekaan—jangan muat naik data sebenar atau sulit.</span>
@@ -129,7 +145,7 @@
       </div>
       <details class="facilitator-check">
         <summary>Semakan pantas penceramah: angka yang sepatutnya diperoleh</summary>
-        <p><strong>Kehadiran mesyuarat:</strong> 11 daripada 12 wakil (91.7%). <strong>Petugas:</strong> 19 orang bagi setiap zon; 57 penugasan keseluruhan untuk tiga hari. Mengikut unit: Pusat Kesihatan Universiti 12, Jabatan Harta Bina 24, Unit Keselamatan 9 dan Pejabat Hal Ehwal Pelajar 12.</p>
+        <p><strong>Kehadiran mesyuarat:</strong> 11 daripada 12 wakil (91.7%). <strong>Petugas:</strong> 19 orang bagi setiap zon; 57 penugasan keseluruhan untuk tiga hari. Mengikut unit: Pusat Kesihatan Universiti 12, Jabatan Harta Bina 24, Unit Keselamatan 9 dan Pejabat Hal Ehwal Pelajar 12. <a href="materials/contoh-hasil-operasi-aedes.md" target="_blank">Lihat contoh hasil lengkap ↗</a></p>
       </details>
 
       <div class="basic-demo-grid">
@@ -428,18 +444,18 @@ Gunakan kod jika perlu untuk mengira kehadiran dan jumlah petugas. Jangan cipta 
         <div class="prompt-grid">
         <article class="prompt-card">
           <div class="prompt-card-head"><div><span>01 · RINGKAS</span><h4>Satu hasil yang jelas</h4></div><button type="button" class="copy-button" data-copy-target="prompt-ringkas">Salin arahan</button></div>
-          <pre id="prompt-ringkas">Baca semua bahan program yang saya berikan. Sediakan ringkasan pengurusan satu halaman dalam Bahasa Melayu rasmi. Gunakan hanya fakta daripada bahan dan tandakan maklumat yang perlu saya sahkan.</pre>
+          <pre id="prompt-ringkas">Baca semua bahan operasi yang saya berikan. Sediakan ringkasan pengurusan satu halaman dalam Bahasa Melayu rasmi. Gunakan hanya fakta daripada bahan dan tandakan maklumat yang perlu saya sahkan.</pre>
         </article>
 
         <article class="prompt-card">
           <div class="prompt-card-head"><div><span>02 · BERSTRUKTUR</span><h4>Formula lima komponen</h4></div><button type="button" class="copy-button" data-copy-target="prompt-berstruktur">Salin arahan</button></div>
-          <pre id="prompt-berstruktur">Matlamat: Sediakan pakej susulan pascaprogram untuk urus setia.
+          <pre id="prompt-berstruktur">Matlamat: Sediakan draf pelan operasi pembasmian tempat pembiakan Aedes untuk semakan urus setia.
 
-Bahan: Gunakan nota mesyuarat, rekod kehadiran dan maklum balas yang diberikan.
+Bahan: Gunakan nota mesyuarat, rekod kehadiran wakil dan cadangan penugasan yang diberikan.
 
-Batasan: Gunakan Bahasa Melayu rasmi. Jangan tambah fakta, nama, tarikh atau pemilik tindakan yang tiada dalam sumber.
+Batasan: Gunakan Bahasa Melayu rasmi. Jangan tambah fakta, nama, tarikh atau pemilik tindakan yang tiada dalam sumber. Jangan cipta arahan teknikal kesihatan atau penggunaan bahan kimia.
 
-Hasil: Sediakan (1) ringkasan pengurusan, (2) jadual tindakan dan (3) draf e-mel susulan.
+Hasil: Sediakan (1) ringkasan pengurusan, (2) jadual operasi, (3) senarai tindakan dan (4) draf hebahan.
 
 Semakan: Semak semula semua angka dan senaraikan perkara yang memerlukan pengesahan manusia.</pre>
         </article>
@@ -448,9 +464,9 @@ Semakan: Semak semula semua angka dan senaraikan perkara yang memerlukan pengesa
           <div class="prompt-card-head"><div><span>03 · BERAGENT</span><h4>Rancang, laksana dan audit</h4></div><button type="button" class="copy-button" data-copy-target="prompt-beragent">Salin arahan</button></div>
           <pre id="prompt-beragent">Teliti folder projek ini dan fahami bahan yang tersedia. Bentangkan rancangan kerja ringkas, kemudian teruskan tugas berikut:
 
-1. Kira kadar kehadiran dan purata skor maklum balas.
+1. Kira kehadiran mesyuarat dan jumlah petugas mengikut zon dan unit.
 2. Kenal pasti keputusan, isu dan tindakan susulan.
-3. Hasilkan ringkasan pengurusan, jadual tindakan dan draf e-mel.
+3. Hasilkan ringkasan pengurusan, jadual operasi dan draf hebahan.
 4. Simpan hasil sebagai fail baharu tanpa mengubah fail sumber.
 5. Audit hasil terhadap sumber sebelum selesai.
 
@@ -459,11 +475,11 @@ Gunakan “Perlu disahkan” bagi maklumat yang tiada. Jangan menghantar e-mel, 
 
         <article class="prompt-card">
           <div class="prompt-card-head"><div><span>04 · BERPENGAWASAN</span><h4>Kelulusan manusia dahulu</h4></div><button type="button" class="copy-button" data-copy-target="prompt-pengawasan">Salin arahan</button></div>
-          <pre id="prompt-pengawasan">Bantu saya menyediakan laporan susulan berdasarkan bahan yang diberikan.
+          <pre id="prompt-pengawasan">Bantu saya menyediakan draf pelan operasi berdasarkan bahan yang diberikan.
 
 Fasa 1: Senaraikan fail yang ditemui, fakta utama dan jurang maklumat. Cadangkan rancangan kerja dan tunggu kelulusan saya.
 
-Fasa 2 selepas diluluskan: Hasilkan draf laporan dan jadual tindakan. Jangan ubah sumber atau melakukan tindakan luaran.
+Fasa 2 selepas diluluskan: Hasilkan ringkasan, jadual operasi dan draf hebahan. Jangan ubah sumber atau melakukan tindakan luaran.
 
 Fasa 3: Semak fakta dan angka, nyatakan andaian, kemudian tunjukkan perubahan untuk semakan akhir manusia.</pre>
         </article>
@@ -492,6 +508,7 @@ Fasa 3: Semak fakta dan angka, nyatakan andaian, kemudian tunjukkan perubahan un
         <a href="assets/NTW-2026-Agentic-AI-Pembukaan-10-Minit.pptx"><span>Slaid PowerPoint</span><small>Muat turun .pptx</small></a>
         <a href="materials/nota-ringkas-agentic-ai.md"><span>Nota ringkas peserta</span><small>Buka nota</small></a>
         <a href="materials/00-formula-delegasi.md"><span>Formula delegasi</span><small>Buka templat arahan</small></a>
+        <a href="materials/contoh-hasil-operasi-aedes.md"><span>Contoh hasil operasi Aedes</span><small>Bandingkan jawapan AI</small></a>
         <a href="https://github.com/drMurtadha/ntw-agentic-ai-2026" target="_blank" rel="noreferrer"><span>Repositori GitHub</span><small>Lihat semua bahan sumber</small></a>
       </div>
     </section>
@@ -502,6 +519,6 @@ Fasa 3: Semak fakta dan angka, nyatakan andaian, kemudian tunjukkan perubahan un
     <a href="#utama">Kembali ke atas ↑</a>
   </footer>
   <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
-  <script src="script.js?v=20260720-2"></script>
+  <script src="script.js?v=20260720-3"></script>
 </body>
 </html>
