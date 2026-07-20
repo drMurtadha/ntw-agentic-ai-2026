@@ -29,6 +29,8 @@ nav a:hover{color:var(--teal)}
 .presenter-photo-frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--panel);border:1px solid var(--line);box-shadow:18px 18px 0 var(--lime)}
 .presenter-photo-frame::before{content:"";position:absolute;inset:0;z-index:1;border:8px solid rgba(255,248,231,.72);pointer-events:none}
 .presenter-photo-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.cover-hero .presenter-photo-frame{aspect-ratio:2/3}
+.cover-hero .presenter-photo-frame img{object-fit:contain;object-position:center}
 .presenter-visual figcaption .presenter-tag{display:inline-block;margin:0 0 9px;padding:5px 8px;background:var(--teal);color:white;font-size:10px;font-weight:900;letter-spacing:.1em}
 .presenter-visual figcaption{position:relative;z-index:3;width:calc(100% - 42px);margin:-54px 0 0 21px;padding:18px 20px;background:var(--ink);color:white;box-shadow:0 14px 35px rgba(74,11,16,.22)}
 .presenter-visual figcaption strong,.presenter-visual figcaption>span:last-child{display:block}
@@ -44,16 +46,6 @@ nav a:hover{color:var(--teal)}
 .card-a{top:8%;left:7%}
 .card-b{right:0;top:37%}
 .card-c{bottom:9%;left:15%}
-.magazine-feature{max-width:var(--max);margin:40px auto 0;display:grid;grid-template-columns:.7fr 1.3fr;align-items:center;gap:72px;padding:80px;background:var(--ink);color:white}
-.magazine-cover-wrap{position:relative;max-width:350px;margin:auto}
-.magazine-cover-wrap::after{content:"";position:absolute;z-index:0;inset:18px -18px -18px 18px;background:var(--lime)}
-.magazine-cover-wrap img{position:relative;z-index:1;display:block;width:100%;height:auto;border:1px solid rgba(255,255,255,.35);box-shadow:0 24px 60px rgba(44,7,10,.38)}
-.magazine-copy h2{max-width:650px;margin:0;font:700 clamp(36px,4vw,54px)/1.05 "Space Grotesk";letter-spacing:-.035em}
-.magazine-copy>p:not(.eyebrow){max-width:650px;margin:25px 0;color:#f0d7c4;font-size:18px}
-.magazine-topics{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
-.magazine-topics span{padding:8px 11px;border:1px solid #9a2b2f;color:#f8e9d0;font-size:12px;font-weight:800}
-.magazine-download{display:inline-flex;background:var(--lime);color:var(--ink)}
-.magazine-download:hover{background:white}
 .statement,.process-section,.scenario,.formula,.safety,.resources{max-width:var(--max);margin:auto;padding:110px 0}
 .statement h2{max-width:1000px;margin:0 0 52px;font-size:clamp(40px,5vw,64px)}
 .comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px}
@@ -168,7 +160,7 @@ footer a{color:var(--lime);font-weight:700}
 .hero{grid-template-columns:1fr;padding:64px 24px}
 .hero-visual{max-width:500px;margin:auto}
 .presenter-visual{width:min(100%,470px);margin:20px auto 0;transform:none}
-.magazine-feature{grid-template-columns:1fr;gap:52px;margin:24px;padding:52px 32px}.statement,.process-section,.scenario,.formula,.safety,.resources{padding:80px 24px}
+.statement,.process-section,.scenario,.formula,.safety,.resources{padding:80px 24px}
 .comparison,.formula,.resources{grid-template-columns:1fr}
 .process-list{grid-template-columns:1fr 1fr}
 .scenario-flow{grid-template-columns:1fr}
@@ -181,7 +173,6 @@ footer a{color:var(--lime);font-weight:700}
 }
 @media(max-width:560px){.header-cta{display:none}
 .hero h1{font-size:44px}
-.magazine-feature{margin:14px;padding:38px 20px}.magazine-cover-wrap{max-width:270px}.magazine-copy h2{font-size:34px}
 .hero-visual{display:none}
 .presenter-photo-frame{aspect-ratio:5/6;box-shadow:10px 10px 0 var(--lime)}
 .presenter-visual figcaption{width:calc(100% - 24px);margin:-42px 0 0 12px;padding:15px 16px}
